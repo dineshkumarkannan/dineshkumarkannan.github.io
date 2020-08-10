@@ -5,7 +5,7 @@ const Experience = () => {
         <div className="row">
             <div className="col-12">
                 <p>
-                    This is a sample Home page just to demonstrate routing demo
+                    About my experience you will find here..!!
                 </p>
             </div>
         </div>
