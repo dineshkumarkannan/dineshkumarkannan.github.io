@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/dineshkumarkannan/dineshkumarkannan.in/issues"
   },
-  "homepage": "https://github.com/dineshkumarkannan/dineshkumarkannan.in#readme",
+  "homepage": "https://dineshkumarkannan.github.io/",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
