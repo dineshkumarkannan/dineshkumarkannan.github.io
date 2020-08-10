@@ -1,0 +1,116 @@
+/* @import './normalize.css'; */
+@import './typography.css';
+/* @import './prism.css'; */
+
+@font-face {
+	font-family: 'Plus Jakarta Text';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/PlusJakartaText-Regular.woff2') format('woff2'),
+		url('../fonts/PlusJakartaText-Regular.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Plus Jakarta Text';
+	font-style: italic;
+	font-weight: normal;
+	src: url('../fonts/PlusJakartaText-Italic.woff2') format('woff2'),
+		url('../fonts/PlusJakartaText-Italic.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Plus Jakarta Text';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/PlusJakartaText-Bold.woff2') format('woff2'),
+		url('../fonts/PlusJakartaText-Bold.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Plus Jakarta Text';
+	font-style: italic;
+	font-weight: 600;
+	src: url('../fonts/PlusJakartaText-BoldItalic.woff2') format('woff2'),
+		url('../fonts/PlusJakartaText-BoldItalic.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/FiraCode-Regular.woff2') format('woff2'),
+		url('../fonts/FiraCode-Regular.woff') format('woff');
+	font-display: swap;
+}
+
+:root {
+	--font-text: normal normal 1rem/1.5 'Plus Jakarta Text', sans-serif;
+	--font-headings: var(--font-text);
+	--font-code: normal normal 0.8rem/1.5 'Fira Code', monospace;
+
+	--bg: #ffffff;
+	--text-color: #212121;
+	--headings-color: #000000;
+
+	--code-span-bg: var(--bg);
+	--code-span-color: #b916da;
+	--code-block-bg: #011627;
+	--code-block-color: #f6f8fa;
+
+	--focus-ring: rgba(66, 153, 225, 0.6);
+
+	--select-color: rgba(66, 153, 225, 0.4);
+	--horizontal-rule-color: #eaeaea;
+
+	--button-bg: #edf2f7;
+	--button-bg-hover: #e2e8f0;
+	--button-bg-active: #cbd5e0;
+
+	--input-border: #cbd5e0;
+	--input-border-hover: #a0aec0;
+	--input-placeholder: #a0aec0;
+
+	--primary: #005eca;
+	--primary-opposite: var(--bg);
+	--primary-hover: #0a52a5;
+	--primary-active: #0b3c74;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: additional-ligatures;
+}
+
+main {
+	width: 50%;
+	margin: 10% 25%;
+}
+
+.dim {
+	opacity: 1;
+	transition: opacity 0.15s ease-in;
+}
+.dim:hover,
+.dim:focus {
+	opacity: 0.5;
+	transition: opacity 0.15s ease-in;
+	box-shadow: none;
+}
+
+@media (max-width: 350px) {
+	main {
+		width: 90%;
+		margin: 15% 5%;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		width: 80%;
+		margin: 15% 10%;
+	}
+}
